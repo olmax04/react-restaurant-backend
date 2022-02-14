@@ -1,0 +1,25 @@
+{
+  "name": "react-restaurant-backend",
+  "version": "1.0.0",
+  "description": "react-restaurant-backend via Express.JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olmax04/react-restaurant-backend.git"
+  },
+  "author": "olmax04",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olmax04/react-restaurant-backend/issues"
+  },
+  "homepage": "https://github.com/olmax04/react-restaurant-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  }
+}
