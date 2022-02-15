@@ -13,7 +13,7 @@ class WaiterService {
   async callWaiter(req, res) {
     let result = await this.waiterController.callWaiter(
       req.body.clientId,
-      req.body.table
+      req.body.tableNum
     );
     return res.json(result);
   }
@@ -21,7 +21,7 @@ class WaiterService {
   async callWaiterDone(req, res) {
     let result = await this.waiterController.callWaiterDone(
       req.body.clientId,
-      req.body.table
+      req.body.tableNum
     );
     return res.json(result);
   }
