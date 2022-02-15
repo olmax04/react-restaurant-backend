@@ -12,16 +12,16 @@ class WaiterService {
 
   async callWaiter(req, res) {
     let result = await this.waiterController.callWaiter(
-      req.query.clientId,
-      req.query.table
+      req.body.clientId,
+      req.body.table
     );
     return res.json(result);
   }
 
   async callWaiterDone(req, res) {
     let result = await this.waiterController.callWaiterDone(
-      req.query.clientId,
-      req.query.table
+      req.body.clientId,
+      req.body.table
     );
     return res.json(result);
   }
