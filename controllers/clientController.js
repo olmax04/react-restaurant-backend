@@ -13,7 +13,7 @@ class ClientController {
         reviews: null,
         table: table,
       });
-      return client;
+      return client._id.toString();
     } catch (err) {
       console.log(err);
     }
