@@ -6,11 +6,11 @@ class ReviewService {
   }
   async create(req, res) {
     let result = await this.reviewController.create({
-      name: req.query.name,
-      phone: req.query.phone,
-      content: req.query.content,
-      tableNum: req.query.table,
-      clientId: req.query.clientId,
+      name: req.body.name,
+      phone: req.body.phone,
+      content: req.body.content,
+      tableNum: req.body.table,
+      clientId: req.body.clientId,
     });
     return res.json(result);
   }
