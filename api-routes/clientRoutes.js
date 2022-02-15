@@ -7,7 +7,7 @@ class ClientRoutes extends ClientService {
   }
 
   main() {
-    this.app.post("/", (req, res) => super.create(req, res));
+    this.app.post("/clients", (req, res) => super.create(req, res));
   }
 }
 
