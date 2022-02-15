@@ -9,7 +9,7 @@ class ReviewService {
       name: req.body.name,
       phone: req.body.phone,
       content: req.body.content,
-      tableNum: req.body.table,
+      tableNum: req.body.tableNum,
       clientId: req.body.clientId,
     });
     return res.json(result);
