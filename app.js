@@ -1,6 +1,7 @@
 // Imports
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 
 try {
@@ -17,6 +18,8 @@ try {
 
   // Express Requests
   const app = express();
+  app.use(cors());
+  app.options("*", cors());
   const mongooseService = new MongooseService(mongoose, DB_CONN);
   const waiterRoutes = new WaiterRoutes(app);
   const reviewRoutes = new ReviewRoutes(app);
